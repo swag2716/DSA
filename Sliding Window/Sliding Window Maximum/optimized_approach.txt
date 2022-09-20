@@ -1,0 +1,29 @@
+Ques :- You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. 
+You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+
+Return the max sliding window.
+
+
+/********************************************/
+
+We have to find maximum of all subarray in it so we have to store the value of all the maximum element of the subarray and 
+the next elements also as they can be the potential candidate for maximum element for the next window.
+
+1) isme hum ek deque lenge aur usme pehla element push krenge
+
+2) else phir hum check krenge kya humara jo j pe element h wo deque ki back se bada h kyuki phir wo chote waale element hamare potential candidate nhi honge,
+   phir jab tak wo deque ki back se bada hoga hum usse pop kr denge, aur phir j waale element ko deque m push kr denge
+
+3) agar hamari window size hit krti h to apne ans vector m deque ka front store krdenge aur phir check krenge kya deque ka front window k first element k 
+   equal h, if equal front ko pop kr denge 
+
+
+Ex :- [3, 1, -1, -3, 5, 3, 6, 7]
+      k = 3
+
+
+Sol :- q = 3 1 -1 -3 5 3 6 7 (isme conditions k according element pop ho jaayenge, pop nhi karein h)
+       ans = 3 1 5 5 6 7
+
+
+      

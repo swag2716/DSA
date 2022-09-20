@@ -1,0 +1,16 @@
+Ques :- Given an array A[] of size N and a positive integer K, find the first negative integer for each and every window(contiguous subarray) of size K.
+
+
+
+/*****************************************/
+
+1) We will take a queue in it
+
+2) When we find the negative element then we will push it into the queue
+
+3) when the window size hits we will check if the queue is empty we will print 0, else we will print front of queue
+
+4) if front of queue is equal to the first element of window we will pop it as it cannot be the potential candidate for the next window
+
+
+/********************************************/ 
