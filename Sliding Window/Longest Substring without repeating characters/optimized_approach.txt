@@ -1,0 +1,16 @@
+Ques:- Given a string s, find the length of the longest substring without repeating characters.
+
+
+
+/***********************************************************/
+
+
+
+1) W will store the frequency of every character we encounter
+
+2) when we get any map value greater than 1 we will store the maximum , then run a loop and decrement first 
+   value of the window until the j value greater than 1 and increment i
+
+3) else store maximum
+
+4) increment j
